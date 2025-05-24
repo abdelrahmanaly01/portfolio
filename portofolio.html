@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Aly Youssef - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #1a202c; /* Dark background for hero */
+        }
+        .section-bg {
+            background-color: #f7fafc; /* Light gray for sections */
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom scrollbar for better aesthetics (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <nav class="bg-gray-900 text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="#home" class="text-2xl font-bold hover:text-indigo-400 transition-colors">Abdelrahman Aly Youssef</a>
+            <div class="space-x-6 mt-2 sm:mt-0">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto text-center px-6">
+            <img src="https://placehold.co/150x150/E2E8F0/2D3748?text=AAY" alt="Abdelrahman Aly Youssef" class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full mb-8 border-4 border-indigo-500 shadow-xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm Abdelrahman Aly Youssef!</h1>
+            <p class="text-lg md:text-2xl mb-8 text-indigo-300">I'm a Mid-level Data Engineer passionate about building and optimizing data warehouses and pipelines.</p>
+            <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors shadow-md">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 md:py-24 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+                <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                    Skilled Data Engineer with expertise in building and optimizing data warehouses and pipelines using Azure technologies, including Azure Data Factory (ADF) and Azure SQL Database.
+                </p>
+                <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                    Proficient in automating workflows with Python, cloud tools like Function App and Runbooks, and integrating APIs such as SharePoint, Blob Storage, and Google API. Adept at collaborating with multinational teams through DevOps, delivering scalable solutions to support data-driven decision-making.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    My core skills include Azure Data Factory, Azure SQL Database, Python, ETL Processes, Data Warehousing, DevOps, and API Integration. I am always eager to learn and apply new technologies to solve complex data challenges.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/CBD5E0/4A5568?text=Steam+Reviews" alt="Steam Reviews Data Lake to Data Warehouse" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Steam Reviews Data Lake to Data Warehouse</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Created a Steam reviews data lake on AWS S3 and used PySpark to process the data into a more clean and structured form to move it to a Redshift warehouse.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">AWS S3</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">PySpark</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">AWS Redshift</span>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/A0AEC0/2D3748?text=Donor+Prediction" alt="Finding Donors Using Supervised ML" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Finding Donors Using Supervised ML</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Created a classification model (Decision Tree Classifier) to predict potential donors for a charity company. Fine-tuned the model using GridSearch, achieving an accuracy score of 85%.</p>
+                         <div class="mb-4">
+                            <span class="inline-block bg-teal-100 text-teal-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Scikit-learn</span>
+                            <span class="inline-block bg-teal-100 text-teal-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Decision Tree</span>
+                            <span class="inline-block bg-teal-100 text-teal-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">GridSearch</span>
+                            <span class="inline-block bg-teal-100 text-teal-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Machine Learning</span>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/9F7AEA/4A5568?text=Ford+Bike+EDA" alt="Ford Bike Data Exploration" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Ford Bike Data Exploration</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Exploratory Data Analysis (EDA) for the Ford bike dataset using Python, focusing on data visualization and multivariant relations. The dataset included information about individual rides in a bike-sharing system in the San Francisco Bay area.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-purple-100 text-purple-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Data Visualization</span>
+                            <span class="inline-block bg-purple-100 text-purple-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">EDA</span>
+                        </div>
+                        </div>
+                </div>
+                 <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/FBBF24/4A5568?text=A/B+Testing" alt="A/B Testing on Landing Page" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">A/B Testing on Landing Web Page</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Examined the average traffic on a landing web page before and after adding a new feature using inferential statistics and bootstrapping methods in Python.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Inferential Statistics</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Bootstrapping</span>
+                            <span class="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">A/B Testing</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/34D399/4A5568?text=Airline+DW" alt="Airline System Data Warehouse Modeling" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Airline System Data Warehouse Modeling</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Built a star schema based on business problems and granularity needs. Generated a physical data model, worked on ETL processes, and answered business questions using analytical SQL queries on the warehouse.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Star Schema</span>
+                            <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Data Modeling</span>
+                            <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">ETL</span>
+                            <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x400/F472B6/4A5568?text=Chest+Disease+App" alt="Chest Disease Prediction Web App" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Chest Disease Prediction Web App</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Led a team of 9 to build a deep learning model using TensorFlow to predict 14 types of chest diseases. Deployed the model as a web app using Python Flask.</p>
+                        <div class="mb-4">
+                            <span class="inline-block bg-pink-100 text-pink-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">TensorFlow</span>
+                            <span class="inline-block bg-pink-100 text-pink-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Deep Learning</span>
+                            <span class="inline-block bg-pink-100 text-pink-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Python Flask</span>
+                            <span class="inline-block bg-pink-100 text-pink-700 text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">Web App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 md:py-24 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Professional Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-xl mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800">Data Engineer I</h3>
+                    <p class="text-indigo-600 font-medium mb-1">Teleperformance | Nov 2024 - Present</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Design and maintain scalable data pipelines and workflows.</li>
+                        <li>Develop ETL processes to clean and consolidate large datasets.</li>
+                        <li>Manage data in Azure SQL Database and optimize reporting capabilities.</li>
+                        <li>Automate processes using Azure Data Factory, Databricks, Function Apps, and Runbooks.</li>
+                        <li>Analyze CXM data to improve customer support, technical service, and social media management.</li>
+                        <li>Applied SCRUM framework for Data solution development.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800">Global Data Engineer</h3>
+                    <p class="text-indigo-600 font-medium mb-1">Majorel | Apr 2024 - Nov 2024</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Developed a data warehouse for Uber data, optimizing storage and query performance.</li>
+                        <li>Built and managed scalable pipelines using Azure Data Factory (ADF) and Azure SQL Database.</li>
+                        <li>Automated workflows using Python, Function App, Runbooks, Google Apps Script, and APIs (SharePoint, Blob Storage, Google API).</li>
+                        <li>Collaborated with multinational teams through DevOps for data integration and project management.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-xl">
+                    <h3 class="text-2xl font-semibold text-gray-800">Data Analyst</h3>
+                    <p class="text-indigo-600 font-medium mb-1">Partners Outsourcing Solutions | May 2022 - Apr 2024</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Led the Data Analytics Department and built a data warehouse for historical leads.</li>
+                        <li>Developed an attendance reporting system using PostgreSQL, Python, and Excel, reducing ETL time by 75%.</li>
+                        <li>Delivered performance dashboards with Power BI and automated ETL processes.</li>
+                        <li>Managed large-scale datasets (40M+ rows) in PostgreSQL and enhanced reporting efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-16 md:py-24 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Get In Touch</h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-8">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    Feel free to reach out!
+                </p>
+                <a href="mailto:abdelrahman.aly.yossef@gmail.com" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors shadow-md inline-block mb-6">
+                    Email Me
+                </a>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/abdelrahmanaly01" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="GitHub Profile">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdelrahman-a-youssef/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-indigo-600 transition-colors" aria-label="LinkedIn Profile">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="container mx-auto">
+            <p>&copy; <span id="currentYear"></span> Abdelrahman Aly Youssef. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-1">Made with <span class="text-red-500">&hearts;</span> and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Set current year in footer
+        const currentYearElement = document.getElementById('currentYear');
+        if (currentYearElement) {
+            currentYearElement.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+</html>
